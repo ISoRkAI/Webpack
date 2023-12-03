@@ -6,9 +6,13 @@
     "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true,
-    "moduleResolution": "node", "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
-  }, "ts-node": {
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {"@/*":["./src/*"]}
+  },
+  "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
     }
